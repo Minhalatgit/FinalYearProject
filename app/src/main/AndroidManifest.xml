@@ -12,6 +12,9 @@
         <activity android:name=".Activities.HomeActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
+            android:name=".Activities.StatusActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".Activities.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
