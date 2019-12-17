@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background_3"
+    android:background="@color/background"
     tools:context=".Activities.HomeActivity">
     <ImageView
         android:layout_marginTop="20dp"
@@ -34,10 +34,11 @@
             android:contentDescription="Check status of all the data"
             />
         <ImageView
+            android:id="@+id/notification"
             android:layout_weight="1"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/status"
+            android:src="@drawable/notification"
             />
     </LinearLayout>
     <LinearLayout
@@ -46,12 +47,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <ImageView
+            android:id="@+id/analytics"
             android:layout_weight="1"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/status"
+            android:src="@drawable/data_collection"
             />
         <ImageView
+
             android:layout_weight="1"
             android:layout_width="100dp"
             android:layout_height="100dp"
