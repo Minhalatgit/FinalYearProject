@@ -28,17 +28,17 @@
         <ImageView
             android:id="@+id/status"
             android:layout_weight="1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/status"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/data_collection"
             android:contentDescription="Check status of all the data"
             />
         <ImageView
             android:id="@+id/notification"
             android:layout_weight="1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/notification"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/noti"
             />
     </LinearLayout>
     <LinearLayout
@@ -49,9 +49,9 @@
         <ImageView
             android:id="@+id/analytics"
             android:layout_weight="1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/data_collection"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/data_analytics"
             />
         <ImageView
 
