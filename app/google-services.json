@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "433832704079",
+    "firebase_url": "https://baby-monitoring-cbdbb.firebaseio.com",
+    "project_id": "baby-monitoring-cbdbb",
+    "storage_bucket": "baby-monitoring-cbdbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433832704079:android:140c5578090c863b41523a",
+        "android_client_info": {
+          "package_name": "com.minhal.fyp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433832704079-8drek8vol0r11595gdqtco2i5h5cct5m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.minhal.fyp",
+            "certificate_hash": "c5c3eec8395f4db2db88d125d16bed0f503376af"
+          }
+        },
+        {
+          "client_id": "433832704079-jh6cv5kntpvjau9n9a3p6pqebqknej4m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzyrflwZXxpNDbaRhBsjk_UPYZ1iG62-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433832704079-jh6cv5kntpvjau9n9a3p6pqebqknej4m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
