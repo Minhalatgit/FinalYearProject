@@ -1,50 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
+
     <LinearLayout
+        android:layout_weight="1"
         android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-        <TextView
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/humidity" />
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Temperature: "
-            android:textStyle="bold"
-            />
-        <TextView
-            android:id="@+id/temperature"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:textColor="#96D1F3"
+                android:text="Humidity" />
+            <TextView
+                android:id="@+id/tvHumid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40%"
+                android:textSize="30sp"
+                android:textStyle="italic"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <com.hookedonplay.decoviewlib.DecoView
+            android:layout_marginLeft="23dp"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/dynamicArcView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="--"
-            android:textStyle="bold"
-            />
+            android:layout_height="150dp" />
     </LinearLayout>
 
     <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_weight="1"
         android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <TextView
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/thermometer" />
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Humidity: "
-            android:textStyle="bold"
-            />
-        <TextView
-            android:id="@+id/humidity"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:textColor="#B01F4A"
+                android:text="Temperature" />
+            <TextView
+                android:id="@+id/tvTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 C"
+                android:textSize="30sp"
+                android:textStyle="italic"
+                android:textColor="#000000"
+                />
+
+        </LinearLayout>
+
+        <com.hookedonplay.decoviewlib.DecoView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/dynamicArcView2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="--"
-            android:textStyle="bold"
-            />
+            android:layout_height="150dp" />
     </LinearLayout>
-
-
 </LinearLayout>
+

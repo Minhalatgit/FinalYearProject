@@ -9,8 +9,9 @@
     android:theme="@style/ThemeOverlay.AppCompat.Light">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
         android:src="@mipmap/ic_launcher_round" />
 
     <TextView
@@ -23,6 +24,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="minhalnadeem@gmail.com" />
+        android:text="bmsystem8@gmail.com" />
 
 </LinearLayout>

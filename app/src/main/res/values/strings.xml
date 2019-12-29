@@ -2,5 +2,6 @@
     <string name="app_name">FYP</string>
     <string name="navigation_draw_open">Open navigation drawer</string>
     <string name="navigation_draw_close">Close navigation drawer</string>
+    <string name="title_activity_deco_view">DecoView</string>
 
 </resources>
