@@ -31,9 +31,9 @@ public class VideoFragment extends Fragment {
         progDailog.setCancelable(false);
 
         webView=view.findViewById(R.id.web);
-        //webView.loadUrl("http://192.168.0.100:8000/index.html");
+        webView.loadUrl("http://192.168.0.105:8000/index.html");
 
-        webView.loadUrl("http://google.com");
+        //  webView.loadUrl("http://google.com");
 
         webView.setHorizontalScrollBarEnabled(false);
         webView.setVerticalScrollBarEnabled(false);

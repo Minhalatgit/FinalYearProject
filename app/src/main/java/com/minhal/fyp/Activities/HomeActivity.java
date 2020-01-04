@@ -11,13 +11,14 @@ import com.minhal.fyp.R;
 
 public class HomeActivity extends AppCompatActivity {
 
-    ImageView ivStatus,ivNotifications;
+    ImageView ivStatus,ivNotifications,ivAnalytics;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         ivStatus=findViewById(R.id.status);
         ivNotifications=findViewById(R.id.notifications);
+        ivAnalytics=findViewById(R.id.analytics);
 
         ivStatus.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,6 +30,12 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(HomeActivity.this, Notifications.class));
+            }
+        });
+        ivAnalytics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this,DataAnalytics.class));
             }
         });
     }
