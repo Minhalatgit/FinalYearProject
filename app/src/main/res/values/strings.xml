@@ -3,5 +3,8 @@
     <string name="navigation_draw_open">Open navigation drawer</string>
     <string name="navigation_draw_close">Close navigation drawer</string>
     <string name="title_activity_deco_view">DecoView</string>
+    <string name="title_activity_contact">Contact</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 
 </resources>

@@ -24,6 +24,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'com.jjoe64:graphview:4.2.2'
     implementation 'com.github.bmarrdev:android-DecoView-charting:v1.2'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.google.firebase:firebase-messaging:11.0.4'
@@ -33,6 +34,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:16.0.4'
     implementation 'com.google.firebase:firebase-messaging:17.3.4'
     implementation 'com.google.firebase:firebase-functions:16.1.3'
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
