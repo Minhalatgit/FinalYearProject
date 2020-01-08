@@ -23,6 +23,7 @@ public class StatusActivity extends AppCompatActivity implements NavigationView.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_status);
+        String type = getIntent().getStringExtra("FROM");
 
         Toolbar toolbar= findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -36,11 +37,17 @@ public class StatusActivity extends AppCompatActivity implements NavigationView.
                 R.string.navigation_draw_open,R.string.navigation_draw_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
-        if (savedInstanceState == null) {
+        //if (savedInstanceState == null) {
+            if(type!=null && type.equals("Notification")){
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                            new VideoFragment()).commit();
+            }
+            else{
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                     new HumidityFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_humidity);
-        }
+            }
+        //}
     }
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {

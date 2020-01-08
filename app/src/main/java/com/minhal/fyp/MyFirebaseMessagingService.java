@@ -11,7 +11,7 @@ import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
-import com.minhal.fyp.Activities.Notifications;
+import com.minhal.fyp.Activities.StatusActivity;
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
@@ -36,18 +36,22 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
 
     private void sendNotification(String notificationTitle, String notificationBody) {
-        Intent intent = new Intent(this, Notifications.class);
-        //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        Intent intent = new Intent(this, StatusActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.putExtra("FROM","Notification");
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent,
-                PendingIntent.FLAG_ONE_SHOT);
+                PendingIntent.FLAG_UPDATE_CURRENT);
 
         Uri defaultSoundUri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         NotificationCompat.Builder notificationBuilder = (NotificationCompat.Builder) new NotificationCompat.Builder(this)
                 .setAutoCancel(true)   //Automatically delete the notification
                 .setSmallIcon(R.drawable.notification_icon) //Notification icon
+                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setStyle(new NotificationCompat.BigTextStyle()
+                            .bigText(notificationBody))
                 .setContentIntent(pendingIntent)
                 .setContentTitle(notificationTitle)
-                .setContentText(notificationBody)
+                .setContentText("New notification")
                 .setSound(defaultSoundUri);
 
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);

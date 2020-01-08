@@ -70,7 +70,7 @@ public class HumidityFragment extends Fragment {
                 sensorData=dataSnapshot.getValue(SensorData.class);
                 Double temp=sensorData.getTemperature();
                 Double humid=sensorData.getHumidity();
-
+                Log.d("Minhal",temp.toString());
                 tvTemp.setText(temp.toString()+" \u2109");
                 tvHumid.setText(humid.toString()+"%");
                 showDataInDecoView(humid.intValue(),temp.intValue());
@@ -78,7 +78,7 @@ public class HumidityFragment extends Fragment {
             }
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                Log.i("onCancelled","Failed");
+                Log.i("onCancelled",databaseError.getMessage());
             }
         });
 
@@ -114,21 +114,8 @@ public class HumidityFragment extends Fragment {
                 .build();
 
         //listeners for data change
-
         arcView.addSeries(seriesItem1);
         arcView2.addSeries(seriesItem2);
-//        int series1Index = arcView.addSeries(seriesItem1);
-//        int series2Index = arcView2.addSeries(seriesItem2);
-//
-//        arcView.addEvent(new DecoEvent.Builder(DecoEvent.EventType.EVENT_SHOW, true)
-//                .setDelay(30)
-//                .setDuration(30)
-//                .build());
-//
-//        //arcView.addEvent(new DecoEvent.Builder(25).setIndex(series1Index).setDelay(4000).build());
-//        arcView.addEvent(new DecoEvent.Builder(humid.intValue()).setIndex(series1Index).setDelay(500).build());
-//        //arcView.addEvent(new DecoEvent.Builder(10).setIndex(series1Index).setDelay(12000).build());
-
     }
 
 }

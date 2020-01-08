@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background"
+        android:background="@drawable/background"
     tools:context=".Activities.HomeActivity">
     <ImageView
         android:layout_marginTop="20dp"
@@ -54,11 +54,11 @@
             android:src="@drawable/data_analytics"
             />
         <ImageView
-
+            android:id="@+id/contact"
             android:layout_weight="1"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/status"
+            android:src="@drawable/contact"
             />
     </LinearLayout>
     </LinearLayout>
